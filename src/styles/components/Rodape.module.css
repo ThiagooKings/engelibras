@@ -1,0 +1,60 @@
+.containerFluidRodape{
+    width: 100%;
+    margin: 0 auto;
+    background: var(--graycard);
+  }
+
+  .containerRodape{
+    max-width: 992px;
+    margin: 0 auto;
+    gap: 2.5rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 2fr;
+  }
+
+  .imgTexto{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+  }
+
+  .imgTexto span{
+    text-align: center;
+    line-height: 25px;
+    color: white;
+  }
+
+  .imgTexto img{
+    width: 166px;
+    margin: 0 auto;
+    padding-bottom: 1rem;
+  }
+
+  .secoesRodape{
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+  }
+
+  .secoesRodape span, .enderecoRodape span{
+    font-size: 1.5rem;
+    font-weight: 900;
+    color: var(--blue);
+    padding-bottom: 1rem;
+  }
+  .secoesRodape ul{
+      padding-left: 55px;
+  }
+  .secoesRodape ul > li{
+      color: white;
+      padding-bottom: 1rem;
+  }
+
+  .secoesRodape ul > li > a{
+    font-size: 1.25rem;
+    font-weight: 500;
+    }

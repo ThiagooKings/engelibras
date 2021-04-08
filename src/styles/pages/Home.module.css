@@ -1,0 +1,188 @@
+.containerFluid{
+  width: 100%;
+  margin: 0 auto;
+}
+.containerFlex{
+display: flex;
+flex-direction: row;
+align-items: center;
+flex-wrap: wrap;
+justify-content: center;
+}
+
+.container{
+  max-width: 992px;
+  margin: 0 auto;
+  gap: 2.5rem;
+}
+
+.containerDic{
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  align-items: center;
+}
+
+.containerQS{
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  align-items: center;
+}
+
+.redText{
+  color: var(--red);
+}
+
+.blueText{
+  color: var(--blue);
+}
+
+.sectionBox{
+  padding-top: 2rem;
+  padding-bottom: 4rem;
+  background: var(--lightblue);
+}
+
+.sectionBox h1 {
+  padding-bottom:2rem ;
+}
+
+.textBox{
+text-align: justify;
+align-items: center;
+line-height: 1.875rem;
+
+}
+
+.sectionContribuidores{
+  padding-top: 2rem;
+  padding-bottom: 4rem;
+  background: linear-gradient(135deg, #72EDF2 0%, #5151E5 100%);
+}
+
+.sectionContribuidores h3{
+  padding-bottom:2rem;
+}
+
+.boxContribuuidores{
+  background-color: var(--graycard);
+  border-radius: 20px;
+  width: 270px;
+  align-items: center;
+  column-gap: 5vw;
+  box-shadow: 4px 4px 6px rgba(0, 0, 0, .3);
+}
+
+.imgContribuidores, .nomeContribuidor{
+  text-align: center;
+}
+
+.imgContribuidores img{
+  max-width: 150px;
+  height: auto;
+  border-radius: 320px;
+  margin-top: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.nomeContribuidor span{
+font-family: 'Oswald', sans-serif;
+font-size: 1.375rem;
+color: var(--white);
+}
+
+.funcaonoProjeto{
+  text-align: center;
+  padding: 0.5rem 0 0.5rem 0;
+}
+
+.funcaonoProjeto span{
+  text-transform: uppercase;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1rem;
+  color: var(--red);
+}
+
+.depoimentoContribuidor{
+text-align: justify;
+padding: 0 1rem;
+}
+
+.depoimentoContribuidor p{
+  font-weight: 300;
+  color: var(--white);
+  font-style: italic;
+  font-size: 0.875rem;
+  line-height: 1.5rem;
+}
+
+.iconesSociais{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  column-gap: 15px;
+}
+
+.contatoBox{
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  background: var(--gray6);
+}
+
+.containerForm{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.inputsBox{
+  display: flex;
+  flex-direction: column;
+}
+
+.inputsBox label:first-child{
+  padding-top: 3rem;
+}
+
+.inputsBox span{
+  display: block;
+  font-size: 0.75rem;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+
+.enderecoBox{
+  display: flex;
+  flex-direction: column;
+  padding-left: 4rem;
+}
+
+.enderecoBox span:first-child{
+  padding-top: 3rem;
+  color: var(--red);
+  font-size: 1.375rem;
+  font-weight: 700;
+  padding-bottom: 1rem;
+
+}
+.itemEndereco{
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding-bottom: 2rem;
+}
+
+.itemEmail, .itemContato{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding-bottom: 2rem;
+}
+
+.itemEmail img, .itemContato img, .itemEndereco img{
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.textEndereco{
+  line-height: 1.7rem;
+}
