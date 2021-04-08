@@ -10,6 +10,25 @@ export default function Home() {
         <title>Inicio | Engelibras</title>
       </Head>
       <main>
+        {/* Seção do Banner */}
+        <section className={`${styles.containerFluid} ${styles.sectionBanner}`}>
+          <div>
+          </div>
+          <div className={styles.conteudoBanner}>
+            <div className={styles.textoBanner}>
+              <h2> Fique por dentro das novidades </h2>
+              <span>
+                    Siga-nos no intagram e fique por dentro de notícias
+                    relacionadas ao nosso projeto!
+              </span>
+              <a href="" target="_blank"><button>Seguir</button></a>
+            </div>
+            <div className={styles.imagemBanner}>
+              <img src="img/layout/imgbannerinicio.svg" />
+            </div>
+          </div>
+
+        </section>
         {/* Seção de Quem Somos */}
         <section className={`${styles.containerFluid} ${styles.sectionBox}`}>
           <h1>
@@ -233,19 +252,19 @@ export default function Home() {
             <div className={styles.enderecoBox}>
               <span className={styles.infoContato}>Informações de Contato</span>
               <div className={styles.itemEndereco}>
-                <img src="icons/enderecoiconazul.svg"/>
+                <img src="icons/enderecoiconazul.svg" />
                 <span className={styles.textEndereco}>Universidade Federal de Itajubá, Câmpus Itabira.
-                      Rua Irmã Ivone Drumond, 200 - Distrito Industrial II,
-                      Itabira - MG.
+                Rua Irmã Ivone Drumond, 200 - Distrito Industrial II,
+                Itabira - MG.
                 </span>
               </div>
               <div className={styles.itemEmail}>
-                <img src="icons/emailiconazul.svg"/>
+                <img src="icons/emailiconazul.svg" />
                 <span className={styles.textEndereco}>engelibras@gmail.com
                 </span>
               </div>
               <div className={styles.itemContato}>
-                <img src="icons/contatoiconazul.svg"/>
+                <img src="icons/contatoiconazul.svg" />
                 <span className={styles.textEndereco}>(31) 99000-9900.
                 </span>
               </div>

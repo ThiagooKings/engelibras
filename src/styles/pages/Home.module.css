@@ -16,6 +16,41 @@ justify-content: center;
   gap: 2.5rem;
 }
 
+.sectionBanner{
+  background: linear-gradient(135deg, #99EFF2 0%, #5151E5 100%);
+  height: 70vh;
+}
+
+.conteudoBanner{
+max-width: 992px;
+margin: 0 auto;
+gap: 1rem;
+display: grid;
+grid-template-columns: 1fr 1fr;
+height: 70vh;
+}
+
+.textoBanner{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.textoBanner span{
+  font-size: 1.25rem;
+  padding-bottom: 1rem;
+}
+
+.imagemBanner{
+  display: flex;
+  align-items: center;
+}
+
+.imagemBanner img{
+  width: 550px;
+  height: auto;
+}
+
 .containerDic{
   display: grid;
   grid-template-columns: 3fr 1fr;

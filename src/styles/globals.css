@@ -45,6 +45,15 @@ h1{
   text-align: center;
 }
 
+h2{
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  font-size: 3.5rem;
+  line-height: 60px;
+  color: var(--blue);
+  padding-bottom: 2rem;
+}
+
 h3{
   text-align: center;
   font-family: 'Roboto', sans-serif;

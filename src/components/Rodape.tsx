@@ -2,7 +2,7 @@ import styles from '../styles/components/Rodape.module.css'
 
 export function Rodape() {
     return (
-        <div>
+        <footer>
             <div className={styles.containerFluidRodape}>
                 <div className={styles.containerRodape}>
                     <div className={styles.imgTexto}>
@@ -53,6 +53,6 @@ export function Rodape() {
                 <span>Desenvolvido por</span> &nbsp; 
                 <a href="https://github.com/ThiagooKings" target="_blank"><span>Thiago Reis</span></a>
             </div>
-        </div>
+        </footer>
     );
 }
