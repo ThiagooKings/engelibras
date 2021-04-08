@@ -18,7 +18,6 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
     
   }
 
@@ -29,7 +28,7 @@
   }
 
   .imgTexto img{
-    width: 166px;
+    width: 200px;
     margin: 0 auto;
     padding-bottom: 1rem;
   }
@@ -40,21 +39,89 @@
       flex-direction: column;
   }
 
-  .secoesRodape span, .enderecoRodape span{
+  .secoesRodape span, .enderecoRodape span:first-child{
     font-size: 1.5rem;
     font-weight: 900;
     color: var(--blue);
+    display: block;
+  }
+
+  .infoText{
     padding-bottom: 1rem;
   }
+
   .secoesRodape ul{
       padding-left: 55px;
   }
   .secoesRodape ul > li{
       color: white;
-      padding-bottom: 1rem;
+      padding-bottom: 1.3rem;
+  }
+
+  .secoesRodape ul > li:last-child{
+    padding-bottom: 0rem;
   }
 
   .secoesRodape ul > li > a{
     font-size: 1.25rem;
     font-weight: 500;
     }
+
+  .enderecoRodape{
+    padding-left: 4rem;
+  }
+
+  .itemEndereco{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding-bottom: 1.5rem;
+  }
+  
+  .itemEndereco span, .itemEmail span, .itemContato span{
+    color: white;
+    line-height: 25px;
+  }
+
+  .itemEndereco img, .itemEmail img, .itemContato img{
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .itemEmail, .itemContato{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-bottom: 1.5rem;
+  }
+
+  .itemSiganos{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .itemSiganos img{
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .containerFluidRodapeinferior{
+    width: 100%;
+    margin: 0 auto;
+    background: var(--gray1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 55px;
+  }
+
+  .containerFluidRodapeinferior span{
+    color: white;
+  }
+
+  .containerFluidRodapeinferior span:last-child{
+    font-weight: 700;
+  }
+
+
