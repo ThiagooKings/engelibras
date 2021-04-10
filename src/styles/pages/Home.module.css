@@ -27,7 +27,7 @@ margin: 0 auto;
 gap: 1rem;
 display: grid;
 grid-template-columns: 1fr 1fr;
-height: 70vh;
+height: 60vh;
 }
 
 .textoBanner{

@@ -2,6 +2,7 @@ import React from 'react';
 import Head from 'next/head'
 import styles from '../styles/pages/Home.module.css'
 import { Rodape } from '../components/Rodape';
+import { Menu } from '../components/Menu';
 
 export default function Home() {
   return (
@@ -12,8 +13,7 @@ export default function Home() {
       <main>
         {/* Seção do Banner */}
         <section className={`${styles.containerFluid} ${styles.sectionBanner}`}>
-          <div>
-          </div>
+          <Menu />
           <div className={styles.conteudoBanner}>
             <div className={styles.textoBanner}>
               <h2> Fique por dentro das novidades </h2>

@@ -1,0 +1,53 @@
+.menuContainer{
+    display: flex;
+    max-width: 992px;
+    margin: 0 auto;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 10vh;
+
+}
+
+.logoMenu{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.logoMenu img{
+    width: 76px;
+    height: auto;
+    margin-right: 10px;
+}
+
+.logoMenu a{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.redText{
+    font-family: 'Bebas Neue', cursive;
+    color: var(--red);
+    font-size: 2.375rem;
+}
+
+.blueText{
+    font-family: 'Bebas Neue', cursive;
+    color: var(--blue);
+    font-size: 2.375rem;
+}
+
+.linksMenu ul > li{
+    display: inline;
+    font-weight: 700;
+    color: var(--blue);
+    padding-right: 20px;
+
+}
+
+.linksMenu ul > li:last-child{
+    padding-right: 0px;
+}
