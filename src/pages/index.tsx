@@ -1,7 +1,7 @@
 import React from 'react';
 import Head from 'next/head'
 import styles from '../styles/pages/Home.module.css'
-import { Rodape } from '../components/Rodape';
+import { Rodape }  from '../components/Rodape';
 import { Menu } from '../components/Menu';
 
 export default function Home() {
@@ -18,8 +18,8 @@ export default function Home() {
             <div className={styles.textoBanner}>
               <h2> Fique por dentro das novidades </h2>
               <span>
-                    Siga-nos no intagram e fique por dentro de notícias
-                    relacionadas ao nosso projeto!
+                Siga-nos no intagram e fique por dentro de notícias
+                relacionadas ao nosso projeto!
               </span>
               <a href="" target="_blank"><button>Seguir</button></a>
             </div>
@@ -272,11 +272,11 @@ export default function Home() {
 
           </div>
         </section>
-        {/* Seção do Rodape */}
-        <section>
-          <Rodape />
-        </section>
       </main>
+      {/* Seção do Rodape */}
+      <section>
+        <Rodape />
+      </section>
     </div>
   );
 

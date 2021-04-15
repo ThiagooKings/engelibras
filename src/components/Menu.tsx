@@ -11,7 +11,7 @@ export function Menu() {
             </div>
             <div className={styles.linksMenu}>
                 <ul>
-                    <li><a href="">Início</a></li>
+                    <li><a href="http://localhost:3000">Início</a></li>
                     <li><a href="">Quem Somos</a></li>
                     <li><a href="">Contribuidores</a></li>
                     <li><a href="">Dicionário</a></li>
