@@ -1,40 +1,101 @@
-.containerFluid{
+.containerFluid {
     width: 100%;
     margin: 0 auto;
-  }
+}
 
-  .sectionBanner{
+.container {
+    max-width: 992px;
+    margin: 0 auto;
+    gap: 2.5rem;
+}
+
+.sectionBanner {
     background: linear-gradient(135deg, #FFF6B7 0%, #F6416C 100%);
     height: 70vh;
-  }
+}
 
-  .conteudoBanner{
+.conteudoBanner {
     max-width: 992px;
     margin: 0 auto;
     gap: 1rem;
     display: grid;
     grid-template-columns: 1fr 1fr;
     height: 60vh;
-    }
+}
 
-    .textoBanner{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-    }
+.textoBanner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
 
-    .textoBanner span{
-        font-size: 1.25rem;
-        padding-bottom: 1rem;
-      }
-      
-      .imagemBanner{
-        display: flex;
-        align-items: center;
-      }
-      
-      .imagemBanner img{
-        width: 550px;
-        height: auto;
-      }
-      
+.textoBanner span {
+    font-size: 1.25rem;
+    padding-bottom: 1rem;
+}
+
+.imagemBanner {
+    display: flex;
+    align-items: center;
+}
+
+.imagemBanner img {
+    width: 550px;
+    height: auto;
+}
+
+.sectionBox {
+    padding-top: 2rem;
+    padding-bottom: 4rem;
+    background: var(--gray6);
+}
+
+.sectionBox h1 {
+    padding-bottom: 2rem;
+}
+
+.redText {
+    color: var(--red);
+}
+
+.blueText {
+    color: var(--blue);
+}
+
+.buscaeIdioma {
+    display: grid;
+    gap: 2.5rem;
+    grid-template-columns: 1.4fr 1fr;
+    padding-bottom: 4rem;
+}
+
+.inputBusca {
+    margin-right: 20px;
+    width: 70%;
+}
+
+.selectIdioma {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.selectIdioma li {
+    display: flex;
+    width: 60%;
+    border: 2px solid var(--gray4);
+    border-radius: 5px;
+    align-items: center;
+    justify-content: center;
+    column-gap: 1.5rem;
+}
+
+.selectIdioma li span {
+    font-size: 1rem;
+    color: var(--gray3);
+}
+
+.listaeConteudo {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 2.5rem;
+}
