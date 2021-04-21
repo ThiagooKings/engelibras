@@ -244,7 +244,7 @@ export default function Home() {
                 <label>Assunto*:</label>
                 <input className={styles.inputPadrao} type="text" placeholder="Digite o assunto" required />
                 <label>Mensagem*:</label>
-                <textarea className={styles.inputPadrao} placeholder="Digite sua mensagem" required />
+                <textarea placeholder="Digite sua mensagem" required />
                 <span>*Campos obrigatórios</span>
                 <button type="submit">Enviar</button>
               </form>
