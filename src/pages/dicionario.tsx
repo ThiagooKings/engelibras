@@ -1,10 +1,43 @@
 import Head from "next/head";
-import React from "react";
+import React, { useState } from "react";
 import { Menu } from '../components/Menu';
 import { Rodape } from "../components/Rodape";
 import styles from '../styles/pages/Dicionario.module.css'
+import PalavrasJSON from '../../palavras.json'
 
-export default function Dicionario() {
+
+    type Palavra = {
+        id: string;
+        palavra: string;
+        idioma: string;
+        bandeira: string;
+        audio: string;
+        videopalavra: string;
+        imgpalavra: string;
+        videosignificado: string;
+        textosignificado: string;
+        
+    }
+    type Frase = {
+        id: string;
+        frase: string;
+        videofrase: string;
+    }
+
+    type Palavras = {
+        palavras: Palavra [];
+    }
+
+
+export default function Dicionario( ) {
+    const palavras : Palavras = PalavrasJSON ;
+    const [palavraSelecionada, setPalavraSelecionada] = useState(-1); 
+
+    function selecionarPalavra(id: number){
+        setPalavraSelecionada(id);
+    }
+
+
     return (
         <div>
             <Head>
@@ -51,21 +84,19 @@ export default function Dicionario() {
                         <div className={styles.listaeConteudo}>
                             <div className={styles.listaPalavras}>
                                 <table>
-                                    <tr>
-                                        <td> Fogo </td>
-                                    </tr>
-                                    <tr>
-                                        <td> Comburente </td>
-                                    </tr>
-                                    <tr>
-                                        <td> Extintor de Incendio </td>
-                                    </tr>
-                                    <tr>
-                                        <td> Fogo 2</td>
-                                    </tr>
-                                    <tr>
-                                        <td> Comburente 2</td>
-                                    </tr>
+                                  
+                                    <tbody>
+                                    {palavras.palavras.map((palavra) => {
+                                           return(
+                                                <tr key={palavra.id} onClick={() => selecionarPalavra(Number(palavra.id))}
+                                                className={palavraSelecionada === Number(palavra.id) ? styles.active : ''}>
+                                                    <td>
+                                                        {palavra.palavra}
+                                                    </td>
+                                                </tr>
+                                           )
+                                       })}
+                                    </tbody>
                                 </table>
 
                             </div>

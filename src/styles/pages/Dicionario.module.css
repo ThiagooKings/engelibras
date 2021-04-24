@@ -99,3 +99,8 @@
     grid-template-columns: 1fr 2fr;
     gap: 2.5rem;
 }
+
+tr.active{
+    background: var(--red);
+    color: white;
+}
