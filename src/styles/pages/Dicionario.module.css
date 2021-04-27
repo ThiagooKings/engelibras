@@ -133,7 +133,49 @@ tr.active{
     background: var(--gray5);
     border: 1px solid var(--blue);
     border-bottom: transparent;
-   
 }
+
+.semPalavra{
+    height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cabecalhoTabs{
+    display: flex;
+    padding-top: 1rem;
+}
+
+.cabecalhoTabs span:first-child{
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--blue);
+    padding-right: 10px;
+}
+
+.cabecalhoTabs button{
+    width: 0;
+    height: 0;
+    padding-left: 10px;
+}
+
+.tabsConteudo{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.25rem;
+    padding-top: 1rem;
+}
+
+.videoPalavra, .imagemPalavra{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.videoPalavra img, .imagemPalavra img{
+max-width: 100%;
+}
+
 
 

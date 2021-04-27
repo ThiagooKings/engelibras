@@ -25,18 +25,21 @@ type Frase = {
 }
 
 type Palavras = {
-    palavras: Palavra[];
+    palavras: Array<Palavra>;
 }
 
 
 export default function Dicionario() {
     const palavras: Palavras = PalavrasJSON;
     const [palavraSelecionada, setPalavraSelecionada] = useState(-1);
+    const [indexPalavra, setIndexPalavra] = useState(-1);
     const [tabSelecionado, setTabSelecionado] = useState(0);
 
-    function selecionarPalavra(id: number) {
+    function selecionarPalavra(id: number, index: number) {
+        setIndexPalavra(index);
         setPalavraSelecionada(id);
     }
+
 
     function selecionarTab(id: number) {
         setTabSelecionado(id);
@@ -82,7 +85,8 @@ export default function Dicionario() {
                             </div>
                             <div className={styles.selectIdioma}>
                                 <li>
-                                    <span> Portugês brasileiro </span> <img src="icons/bandeirabr.svg" />
+                                    <span> Portugês brasileiro </span>
+                                    <img src="icons/bandeirabr.svg" />
                                 </li>
                             </div>
                         </div>
@@ -91,9 +95,9 @@ export default function Dicionario() {
                                 <table>
 
                                     <tbody>
-                                        {palavras.palavras.map((palavra) => {
+                                        {palavras.palavras.map((palavra, index) => {
                                             return (
-                                                <tr key={palavra.id} onClick={() => selecionarPalavra(Number(palavra.id))}
+                                                <tr key={palavra.id} onClick={() => selecionarPalavra(Number(palavra.id), index)}
                                                     className={palavraSelecionada === Number(palavra.id) ? styles.active : ''}>
                                                     <td>
                                                         {palavra.palavra}
@@ -116,6 +120,36 @@ export default function Dicionario() {
                                     <div className={styles.spaceItem} />
                                 </div>
                                 <div className={styles.conteudoTab}>
+                                    {indexPalavra === -1 ? (
+                                        <div className={styles.semPalavra}>
+                                            <span>Selecione uma Palavra</span>
+                                        </div>
+                                    )
+                                        : (
+                                            <>
+                                                <div className={styles.cabecalhoTabs}>
+                                                    <span>{palavras.palavras[indexPalavra].palavra}</span>
+                                                    <img src="icons/bandeirabr.svg" />
+                                                    <button><img src="icons/soundicon.svg" /></button>
+                                                </div>
+
+                                                {tabSelecionado === 0 ? (
+                                                    <div className={styles.tabsConteudo}>
+                                                        <div className={styles.videoPalavra}>
+                                                            <img src="img/dicionario/imageexemplo.png" />
+                                                        </div>
+                                                        <div className={styles.imagemPalavra}>
+                                                        <img src={palavras.palavras[indexPalavra].imgpalavra} />
+                                                        </div>
+                                                    </div>
+                                                ) : (
+                                                    <div>
+
+                                                    </div>
+                                                )}
+
+                                            </>
+                                        )}
 
                                 </div>
                             </div>
