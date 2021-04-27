@@ -6,35 +6,40 @@ import styles from '../styles/pages/Dicionario.module.css'
 import PalavrasJSON from '../../palavras.json'
 
 
-    type Palavra = {
-        id: string;
-        palavra: string;
-        idioma: string;
-        bandeira: string;
-        audio: string;
-        videopalavra: string;
-        imgpalavra: string;
-        videosignificado: string;
-        textosignificado: string;
-        
-    }
-    type Frase = {
-        id: string;
-        frase: string;
-        videofrase: string;
-    }
+type Palavra = {
+    id: string;
+    palavra: string;
+    idioma: string;
+    bandeira: string;
+    audio: string;
+    videopalavra: string;
+    imgpalavra: string;
+    videosignificado: string;
+    textosignificado: string;
 
-    type Palavras = {
-        palavras: Palavra [];
-    }
+}
+type Frase = {
+    id: string;
+    frase: string;
+    videofrase: string;
+}
+
+type Palavras = {
+    palavras: Palavra[];
+}
 
 
-export default function Dicionario( ) {
-    const palavras : Palavras = PalavrasJSON ;
-    const [palavraSelecionada, setPalavraSelecionada] = useState(-1); 
+export default function Dicionario() {
+    const palavras: Palavras = PalavrasJSON;
+    const [palavraSelecionada, setPalavraSelecionada] = useState(-1);
+    const [tabSelecionado, setTabSelecionado] = useState(0);
 
-    function selecionarPalavra(id: number){
+    function selecionarPalavra(id: number) {
         setPalavraSelecionada(id);
+    }
+
+    function selecionarTab(id: number) {
+        setTabSelecionado(id);
     }
 
 
@@ -84,25 +89,35 @@ export default function Dicionario( ) {
                         <div className={styles.listaeConteudo}>
                             <div className={styles.listaPalavras}>
                                 <table>
-                                  
+
                                     <tbody>
-                                    {palavras.palavras.map((palavra) => {
-                                           return(
+                                        {palavras.palavras.map((palavra) => {
+                                            return (
                                                 <tr key={palavra.id} onClick={() => selecionarPalavra(Number(palavra.id))}
-                                                className={palavraSelecionada === Number(palavra.id) ? styles.active : ''}>
+                                                    className={palavraSelecionada === Number(palavra.id) ? styles.active : ''}>
                                                     <td>
                                                         {palavra.palavra}
                                                     </td>
                                                 </tr>
-                                           )
-                                       })}
+                                            )
+                                        })}
                                     </tbody>
                                 </table>
 
                             </div>
                             <div className={styles.palavraeSignificado}>
+                                <div className={styles.tabs}>
+                                    <div onClick={() => selecionarTab(0)} className={tabSelecionado === 0 ? `${styles.tabsItem} ${styles.tabsActive}` : styles.tabsItem}>
+                                        <span>Palavra</span>
+                                    </div>
+                                    <div onClick={() => selecionarTab(1)} className={tabSelecionado === 1 ? `${styles.tabsItem} ${styles.tabsActive}` : styles.tabsItem}>
+                                        <span>Significado</span>
+                                    </div>
+                                    <div className={styles.spaceItem} />
+                                </div>
+                                <div className={styles.conteudoTab}>
 
-
+                                </div>
                             </div>
                         </div>
                     </div>

@@ -104,3 +104,36 @@ tr.active{
     background: var(--red);
     color: white;
 }
+
+.tabs{
+    
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 5fr;
+}
+
+.spaceItem{
+    border-bottom: 1px solid var(--blue);
+}
+
+
+.tabsItem {
+    padding: 0.5rem 1rem;
+    border-bottom: 1px solid var(--blue);
+    cursor: pointer;
+}
+
+.tabsItem span{
+    font-size:  1rem;
+    font-weight: 500;
+    color:  var(--blue);
+}
+
+.tabsActive{
+    background: var(--gray5);
+    border: 1px solid var(--blue);
+    border-bottom: transparent;
+   
+}
+
+
