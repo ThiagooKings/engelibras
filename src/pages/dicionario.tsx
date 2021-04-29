@@ -30,7 +30,7 @@ type Palavras = {
 
 
 export default function Dicionario() {
-    const palavras: Palavras = PalavrasJSON;
+    const db: Palavras = PalavrasJSON;
     const [palavraSelecionada, setPalavraSelecionada] = useState(-1);
     const [indexPalavra, setIndexPalavra] = useState(-1);
     const [tabSelecionado, setTabSelecionado] = useState(0);
@@ -95,7 +95,7 @@ export default function Dicionario() {
                                 <table>
 
                                     <tbody>
-                                        {palavras.palavras.map((palavra, index) => {
+                                        {db.palavras.map((palavra, index) => {
                                             return (
                                                 <tr key={palavra.id} onClick={() => selecionarPalavra(Number(palavra.id), index)}
                                                     className={palavraSelecionada === Number(palavra.id) ? styles.active : ''}>
@@ -128,7 +128,7 @@ export default function Dicionario() {
                                         : (
                                             <>
                                                 <div className={styles.cabecalhoTabs}>
-                                                    <span>{palavras.palavras[indexPalavra].palavra}</span>
+                                                    <span>{db.palavras[indexPalavra].palavra}</span>
                                                     <img src="icons/bandeirabr.svg" />
                                                     <button><img src="icons/soundicon.svg" /></button>
                                                 </div>
@@ -139,13 +139,47 @@ export default function Dicionario() {
                                                             <img src="img/dicionario/imageexemplo.png" />
                                                         </div>
                                                         <div className={styles.imagemPalavra}>
-                                                        <img src={palavras.palavras[indexPalavra].imgpalavra} />
+                                                            <img src={db.palavras[indexPalavra].imgpalavra} />
                                                         </div>
                                                     </div>
                                                 ) : (
-                                                    <div>
+                                                    <>
+                                                        <div className={styles.tabsConteudo}>
+                                                            <div className={styles.videoPalavra}>
+                                                                <img src="img/dicionario/imageexemplo.png" />
+                                                            </div>
+                                                            <div className={styles.textoSignificado}>
+                                                                <p>{db.palavras[indexPalavra].textosignificado}</p>
+                                                            </div>
+                                                        </div>
+                                                        <div className={styles.frasesSignificados}>
+                                                            <span>Frases comuns</span>
+                                                        </div>
+                                                        <div className={styles.tabsConteudo}>
+                                                            <div className={styles.listaPalavras}>
+                                                                <table>
 
-                                                    </div>
+                                                                    <tbody>
+                                                                        {db.palavras.map((palavra, index) => {
+                                                                            return (
+                                                                                <tr key={palavra.id} onClick={() => selecionarPalavra(Number(palavra.id), index)}
+                                                                                    className={palavraSelecionada === Number(palavra.id) ? styles.active : ''}>
+                                                                                    <td>
+                                                                                        {palavra.palavra}
+                                                                                    </td>
+                                                                                </tr>
+                                                                            )
+                                                                        })}
+                                                                    </tbody>
+                                                                </table>
+
+                                                            </div>
+
+                                                            <div className={styles.videoPalavra}>
+                                                                <img src="img/dicionario/imageexemplo.png" />
+                                                            </div>
+                                                        </div>
+                                                    </>
                                                 )}
 
                                             </>

@@ -174,8 +174,23 @@ tr.active{
 }
 
 .videoPalavra img, .imagemPalavra img{
-max-width: 100%;
+width: 100%;
+height: auto;
 }
 
+.textoSignificado p{
+    line-height: 1.875rem;
+}
+
+.frasesSignificados{
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+}
+
+.frasesSignificados span{
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--red);
+}
 
 
