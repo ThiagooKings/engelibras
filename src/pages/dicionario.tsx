@@ -6,7 +6,7 @@ import styles from '../styles/pages/Dicionario.module.css'
 import PalavrasJSON from '../../palavras.json'
 
 
-type Palavra = {
+ type Palavra = {
     id: string;
     palavra: string;
     idioma: string;
@@ -16,34 +16,45 @@ type Palavra = {
     imgpalavra: string;
     videosignificado: string;
     textosignificado: string;
+    frases: Frase[];
 
 }
-type Frase = {
+ type Frase = {
     id: string;
     frase: string;
     videofrase: string;
 }
 
 type Palavras = {
-    palavras: Array<Palavra>;
+    palavras: Palavra[];
 }
 
 
-export default function Dicionario() {
-    const db: Palavras = PalavrasJSON;
+ export default function Dicionario() {
+    const db = PalavrasJSON as Palavras ;
+
     const [palavraSelecionada, setPalavraSelecionada] = useState(-1);
     const [indexPalavra, setIndexPalavra] = useState(-1);
     const [tabSelecionado, setTabSelecionado] = useState(0);
+    const [fraseSelecionada, setFraseSelecionada] = useState(0);
+    const [indexFrase, setIndexFrase] = useState(0);
 
     function selecionarPalavra(id: number, index: number) {
         setIndexPalavra(index);
         setPalavraSelecionada(id);
+        setFraseSelecionada(1);
     }
 
 
     function selecionarTab(id: number) {
         setTabSelecionado(id);
     }
+
+    function selecionarFrase(id: number, index: number){
+        setFraseSelecionada(id);
+        setIndexFrase(index);
+    }
+
 
 
     return (
@@ -93,7 +104,6 @@ export default function Dicionario() {
                         <div className={styles.listaeConteudo}>
                             <div className={styles.listaPalavras}>
                                 <table>
-
                                     <tbody>
                                         {db.palavras.map((palavra, index) => {
                                             return (
@@ -160,12 +170,13 @@ export default function Dicionario() {
                                                                 <table>
 
                                                                     <tbody>
-                                                                        {db.palavras.map((palavra, index) => {
+        
+                                                                        {db.palavras[indexPalavra].frases.map((frases, index) => {
                                                                             return (
-                                                                                <tr key={palavra.id} onClick={() => selecionarPalavra(Number(palavra.id), index)}
-                                                                                    className={palavraSelecionada === Number(palavra.id) ? styles.active : ''}>
+                                                                                <tr key={frases.id} onClick={() => selecionarFrase(Number(frases.id), index)}
+                                                                                    className={fraseSelecionada === Number(frases.id) ? styles.active : ''}>
                                                                                     <td>
-                                                                                        {palavra.palavra}
+                                                                                        {frases.frase}
                                                                                     </td>
                                                                                 </tr>
                                                                             )

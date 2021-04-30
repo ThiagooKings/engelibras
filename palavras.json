@@ -42,22 +42,22 @@
             "frases": [
                 {   
                     "id": "1",
-                    "frases": "Frase 1 Comburente1",
+                    "frase": "Frase 1 Comburente1",
                     "videofrase": "https://www.youtube.com"
                 },
                 {
                     "id": "2",
-                    "frases": "Frase 2 Comburente2",
+                    "frase": "Frase 2 Comburente2",
                     "videofrase": "https://www.youtube.com"
                 },
                 {
                     "id": "3",
-                    "frases": "Frase 3 Comburente3",
+                    "frase": "Frase 3 Comburente3",
                     "videofrase": "https://www.youtube.com"
                 }, 
                 {
                     "id": "4",
-                    "frases": "Frase 4 Comburente4",
+                    "frase": "Frase 4 Comburente4",
                     "videofrase": "https://www.youtube.com"
                 }
             ]
@@ -75,27 +75,27 @@
             "frases": [
                 {
                     "id": "1",
-                    "frases": "Frase 1 Extintor",
+                    "frase": "Frase 1 Extintor",
                     "videofrase": "https://www.youtube.com"
                 },
                 {
                     "id": "2",
-                    "frases": "Frase 2 Extintor",
+                    "frase": "Frase 2 Extintor",
                     "videofrase": "https://www.youtube.com"
                 },
                 {
                     "id": "3",
-                    "frases": "Frase 3 Extintor",
+                    "frase": "Frase 3 Extintor",
                     "videofrase": "https://www.youtube.com"
                 }, 
                 {
                     "id": "4",
-                    "frases": "Frase 4 Extintor",
+                    "frase": "Frase 4 Extintor",
                     "videofrase": "https://www.youtube.com"
                 },
                 {
                     "id": "5",
-                    "frases": "Frase 5 Extintor",
+                    "frase": "Frase 5 Extintor",
                     "videofrase": "https://www.youtube.com"
                 }
             ]
@@ -113,17 +113,17 @@
             "frases": [
                 {
                     "id": "1",
-                    "frases": "Frase 1 Bombeiros",
+                    "frase": "Frase 1 Bombeiros",
                     "videofrase": "https://www.youtube.com"
                 },
                 {
                     "id": "2",
-                    "frases": "Frase 2 Bombeiros",
+                    "frase": "Frase 2 Bombeiros",
                     "videofrase": "https://www.youtube.com"
                 },
                 {
                     "id": "3",
-                    "frases": "Frase 3 Bombeiros",
+                    "frase": "Frase 3 Bombeiros",
                     "videofrase": "https://www.youtube.com"
                 }
             ]
