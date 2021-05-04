@@ -148,3 +148,7 @@ tr:nth-child(even) {
 tr:nth-child(odd) {
     background: var(--gray5);
 }
+
+video{
+    width: 100%;
+}

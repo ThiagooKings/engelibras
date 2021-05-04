@@ -146,13 +146,17 @@ type Palavras = {
                                                     <span>{db.palavras[indexPalavra].palavra}</span>
                                                     <img src="icons/bandeirabr.svg" />
                                                     <button><img src="icons/soundicon.svg" onClick={clicarAudio}/></button>
-                                                    {console.log(audioClick)}
+                                                    
                                                 </div>
 
                                                 {tabSelecionado === 0 ? (
                                                     <div className={styles.tabsConteudo}>
                                                         <div className={styles.videoPalavra}>
-                                                            <img src="img/dicionario/imageexemplo.png" />
+                                                            <video 
+                                                            autoPlay
+                                                            muted
+                                                            loop
+                                                            src="videos/teste.mp4" />
                                                         </div>
                                                         <div className={styles.imagemPalavra}>
                                                             <img src={db.palavras[indexPalavra].imgpalavra} />
