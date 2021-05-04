@@ -38,13 +38,18 @@ type Palavras = {
     const [tabSelecionado, setTabSelecionado] = useState(0);
     const [fraseSelecionada, setFraseSelecionada] = useState(0);
     const [indexFrase, setIndexFrase] = useState(0);
+    const [audioClick, setAudioClick] = useState(false);
 
     function selecionarPalavra(id: number, index: number) {
         setIndexPalavra(index);
         setPalavraSelecionada(id);
         setFraseSelecionada(1);
+        setAudioClick(false);
     }
 
+    function clicarAudio() {
+        setAudioClick(!audioClick);
+    }
 
     function selecionarTab(id: number) {
         setTabSelecionado(id);
@@ -140,7 +145,8 @@ type Palavras = {
                                                 <div className={styles.cabecalhoTabs}>
                                                     <span>{db.palavras[indexPalavra].palavra}</span>
                                                     <img src="icons/bandeirabr.svg" />
-                                                    <button><img src="icons/soundicon.svg" /></button>
+                                                    <button><img src="icons/soundicon.svg" onClick={clicarAudio}/></button>
+                                                    {console.log(audioClick)}
                                                 </div>
 
                                                 {tabSelecionado === 0 ? (
@@ -201,6 +207,14 @@ type Palavras = {
                         </div>
                     </div>
                 </section>
+                { (audioClick==true) &&
+                    <audio
+                    src={db.palavras[indexPalavra].audio}
+                    autoPlay
+                    />
+                                                                    
+                     
+                }
             </main>
             {/* Seção do Rodape */}
             <section>
