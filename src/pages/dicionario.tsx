@@ -156,7 +156,7 @@ type Palavras = {
                                                             autoPlay
                                                             muted
                                                             loop
-                                                            src="videos/teste.mp4" />
+                                                            src={db.palavras[indexPalavra].videopalavra} />
                                                         </div>
                                                         <div className={styles.imagemPalavra}>
                                                             <img src={db.palavras[indexPalavra].imgpalavra} />
