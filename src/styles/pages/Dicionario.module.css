@@ -169,7 +169,6 @@ tr.active{
 
 .videoPalavra, .imagemPalavra{
     display: flex;
-    align-items: center;
     justify-content: center;
 }
 

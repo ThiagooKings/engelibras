@@ -2,27 +2,27 @@
     "palavras": [
         {
             "id": "1",
-            "palavra": "Fogo",
+            "palavra": "Hidrante",
             "idioma": "pt-BR",
             "bandeira": "icons/bandeirabr.svg",
             "audio": "sounds/fogo.wav",
             "videopalavra": "videos/palavras/teste.mp4",
             "imgpalavra": "img/dicionario/fogo.svg",
             "videosignificado": "https://www.youtube.com",
-            "textosignificado": "É uma reação química exotérmica, denominada combustão, que ocorre com a oxidação rápida de material combustível com o oxigênio do ar, provocada por uma fonte de calor, que gera chamas, desprende calor, além de emitir fumaça, gases e outros resíduos.",
+            "textosignificado": "(Hidrante de incêndio) É um terminal hidráulico instalado normalmente nas paredes e corredores de uma edificação para combater grandes incêndios.   Possuem diversos tipos como hidrante público e o hidrante de recalque. Consistem em um conjunto de elementos como abrigo de incêndio, mangueira de incêndio, esguicho, válvula globo e tubulações. Ele é acionado manualmente apenas por pessoas treinadas, pois o grande volume de água que sai pelo hidrante pode fazer com que a pessoa que não esteja preparada se machuque ou não consiga utilizá-lo.",
             "frases": [
                 {   "id": "1",
-                    "frase": "Cuidado com o fogo!",
+                    "frase": "Os bombeiros tiveram que usar um hidrante para controlar o incêndio dentro da edificação",
                     "videofrase": "https://www.youtube.com"
                 },
                 {
                     "id": "2",
-                    "frase": "A casa está pegando fogo!",
+                    "frase": "Os hidrantes de um prédio usam tubulações hidráulicas próprias na edificação.",
                     "videofrase": "https://www.youtube.com"
                 },
                 {   
                     "id": "3",
-                    "frase": "O fogo está muito forte!",
+                    "frase": "Onde estão instalados os hidrantes deste prédio?",
                     "videofrase": "https://www.youtube.com"
                 }
             ]
@@ -31,101 +31,298 @@
         },
         {
             "id": "2",
-            "palavra": "Comburente",
+            "palavra": "Perigo",
             "idioma": "pt-BR",
             "bandeira": "icons/bandeirabr.svg",
             "audio": "sounds/comburente.mp3",
             "videopalavra": "videos/palavras/dicionarioengelibras.mp4",
             "imgpalavra": "img/dicionario/comburente.png",
             "videosignificado": "https://www.youtube.com",
-            "textosignificado": "Comburente é Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer. ",
+            "textosignificado": "Situação, acontecimento ou evento em que pode ocorrer algo prejudicial, indesejável.  Situação perigosa, acontecimento perigoso, evento perigoso.",
             "frases": [
                 {   
                     "id": "1",
-                    "frase": "Frase 1 Comburente1",
+                    "frase": "Você estará em perigo se o seu colchão pegar fogo!",
                     "videofrase": "https://www.youtube.com"
                 },
                 {
                     "id": "2",
-                    "frase": "Frase 2 Comburente2",
+                    "frase": "É muito perigoso se uma vela acessa cair próximo a uma cortina ou em cima de um sofá.",
                     "videofrase": "https://www.youtube.com"
                 },
                 {
                     "id": "3",
-                    "frase": "Frase 3 Comburente3",
-                    "videofrase": "https://www.youtube.com"
-                }, 
-                {
-                    "id": "4",
-                    "frase": "Frase 4 Comburente4",
+                    "frase": "Inalar a fumaça de um incêndio é perigoso, pode causar sérios problemas à saúde.",
                     "videofrase": "https://www.youtube.com"
                 }
+               
             ]
         },
         {
             "id": "3",
-            "palavra": "Extintor de Incêndio",
+            "palavra": "Combustível",
             "idioma": "pt-BR",
             "bandeira": "icons/bandeirabr.svg",
             "audio": "sounds/fogo.wav",
             "videopalavra": "videos/palavras/inicialengelibras.mp4",
             "imgpalavra": "img/dicionario/extintor.png",
             "videosignificado": "https://www.youtube.com",
-            "textosignificado": "Extintor é Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been",
+            "textosignificado": "Materiais ou substâncias sólidas, líquidas ou gasosas que tem a propriedade de se queimar  e liberar calor, chamas e gases quando combinados com oxigênio ou outras substâncias oxidantes",
             "frases": [
                 {
                     "id": "1",
-                    "frase": "Frase 1 Extintor",
+                    "frase": "A madeira é um material combustível sólido, pois ao aumentar a sua temperatura no ar ela se queima, produz chama, fumaça e gases.",
                     "videofrase": "https://www.youtube.com"
                 },
                 {
                     "id": "2",
-                    "frase": "Frase 2 Extintor",
+                    "frase": "Quanto maior a quantidade de material ou substâncias combustíveis existir dentro de um ambiente maior risco de ocorrer um incêndio de grandes proporções.",
                     "videofrase": "https://www.youtube.com"
                 },
                 {
                     "id": "3",
-                    "frase": "Frase 3 Extintor",
-                    "videofrase": "https://www.youtube.com"
-                }, 
-                {
-                    "id": "4",
-                    "frase": "Frase 4 Extintor",
-                    "videofrase": "https://www.youtube.com"
-                },
-                {
-                    "id": "5",
-                    "frase": "Frase 5 Extintor",
+                    "frase": "O gás de cozinha é uma substância combustível e por isso produz a chama que usamos na cozinha.",
                     "videofrase": "https://www.youtube.com"
                 }
+               
             ]
         },
         {
             "id": "4",
-            "palavra": "Bombeiros",
+            "palavra": "Extintor de incêndio",
             "idioma": "pt-BR",
             "bandeira": "icons/bandeirabr.svg",
             "audio": "sounds/bombeiros.mp3",
             "videopalavra": "videos/palavras/testemax.mp4",
             "imgpalavra": "img/dicionario/bombeiros.png",
             "videosignificado": "https://www.youtube.com",
-            "textosignificado": "Os bombeiros são .... Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been ...",
+            "textosignificado": "Extintor de Incêndio é um equipamento de segurança de acionamento manual que possui a finalidade de extinguir ou controlar princípios de incêndios em casos de emergência. Em geral, possui formato cilíndrico  e pode ser carregado até o local do foco do incêndio, contendo um agente extintor sob pressão.",
             "frases": [
                 {
                     "id": "1",
-                    "frase": "Frase 1 Bombeiros",
+                    "frase": "O extintor está carregado?",
                     "videofrase": "https://www.youtube.com"
                 },
                 {
                     "id": "2",
-                    "frase": "Frase 2 Bombeiros",
+                    "frase": "O extintor é de qual classe?",
                     "videofrase": "https://www.youtube.com"
                 },
                 {
                     "id": "3",
-                    "frase": "Frase 3 Bombeiros",
+                    "frase": "Como devo utilizar o extintor?",
                     "videofrase": "https://www.youtube.com"
                 }
+            ]
+        },
+        {
+            "id": "5",
+            "palavra": "Mangueira de incêndio",
+            "idioma": "pt-BR",
+            "bandeira": "icons/bandeirabr.svg",
+            "audio": "sounds/bombeiros.mp3",
+            "videopalavra": "videos/palavras/testemax.mp4",
+            "imgpalavra": "img/dicionario/bombeiros.png",
+            "videosignificado": "https://www.youtube.com",
+            "textosignificado": "Equipamento de combate à incêndio, constituído essencialmente por um duto flexível dotado de uniões conectadas Compõe o hidrante  para combate ao incêndio mas também é usada em caminhões  auto bomba tanque do corpo de bombeiros.",
+            "frases": [
+                {
+                    "id": "1",
+                    "frase": "A mangueira de incêndio está conectada corretamente no hidrante?",
+                    "videofrase": "https://www.youtube.com"
+                },
+                {
+                    "id": "2",
+                    "frase": "Como devo utilizar a mangueira?",
+                    "videofrase": "https://www.youtube.com"
+                },
+                {
+                    "id": "3",
+                    "frase": "A mangueira de incêndio não deve ser usada para molhar o jardim.",
+                    "videofrase": "https://www.youtube.com"
+                }
+            ]
+        },
+        {
+            "id": "6",
+            "palavra": "Incêndio",
+            "idioma": "pt-BR",
+            "bandeira": "icons/bandeirabr.svg",
+            "audio": "sounds/bombeiros.mp3",
+            "videopalavra": "videos/palavras/testemax.mp4",
+            "imgpalavra": "img/dicionario/bombeiros.png",
+            "videosignificado": "https://www.youtube.com",
+            "textosignificado": "Incêndio é uma ocorrência de fogo não controlado e intenso, que pode ser extremamente perigosa para os seres vivos, meio ambiente e para o patrimônio     . A exposição a um incêndio pode produzir a morte, geralmente pela inalação dos gases, ou pelo desmaio causado por eles, ou posteriormente pelas queimaduras graves.",
+            "frases": [
+                {
+                    "id": "1",
+                    "frase": "Quais as medidas de segurança devo tomar em casos de incêndio?",
+                    "videofrase": "https://www.youtube.com"
+                },
+                {
+                    "id": "2",
+                    "frase": "Como combater um incêndio?",
+                    "videofrase": "https://www.youtube.com"
+                },
+                {
+                    "id": "3",
+                    "frase": "O incêndio destruiu todo o prédio.",
+                    "videofrase": "https://www.youtube.com"
+                }
+            ]
+        },
+        {
+            "id": "7",
+            "palavra": "Rota de fuga",
+            "idioma": "pt-BR",
+            "bandeira": "icons/bandeirabr.svg",
+            "audio": "sounds/bombeiros.mp3",
+            "videopalavra": "videos/palavras/testemax.mp4",
+            "imgpalavra": "img/dicionario/bombeiros.png",
+            "videosignificado": "https://www.youtube.com",
+            "textosignificado": "Rota de fuga é o trajeto no qual as pessoas devem seguir em casos de incêndio, em situações que exijam a evacuação de um local",
+            "frases": [
+                {
+                    "id": "1",
+                    "frase": "Sigam a rota de emergência para encontrar um local seguro!",
+                    "videofrase": "https://www.youtube.com"
+                },
+                {
+                    "id": "2",
+                    "frase": "A rota de emergência está sinalizada através de placas, e pinturas no chão e nas paredes.",
+                    "videofrase": "https://www.youtube.com"
+                },
+                {
+                    "id": "3",
+                    "frase": "Os brigadistas devem conhecer previamente a rota de emergência.",
+                    "videofrase": "https://www.youtube.com"
+                }
+            ]
+        },
+        {
+            "id": "8",
+            "palavra": "Ponto de encontro",
+            "idioma": "pt-BR",
+            "bandeira": "icons/bandeirabr.svg",
+            "audio": "sounds/bombeiros.mp3",
+            "videopalavra": "videos/palavras/testemax.mp4",
+            "imgpalavra": "img/dicionario/bombeiros.png",
+            "videosignificado": "https://www.youtube.com",
+            "textosignificado": "Local para onde  as pessoas devem ser direcionadas pelas sinalizações de emergência ou pelos brigadistas em situações de emergência.",
+            "frases": [
+                {
+                    "id": "1",
+                    "frase": "Todos devem permanecer no ponto de encontro até os bombeiros chegarem.",
+                    "videofrase": "https://www.youtube.com"
+                },
+                {
+                    "id": "2",
+                    "frase": "O ponto de encontro está bem distante do local onde o incêndio aconteceu.",
+                    "videofrase": "https://www.youtube.com"
+                },
+                {
+                    "id": "3",
+                    "frase": "O ponto de encontro é um local seguro.",
+                    "videofrase": "https://www.youtube.com"
+                }
+            ]
+        },
+        {
+            "id": "9",
+            "palavra": "Brigada de incêndio",
+            "idioma": "pt-BR",
+            "bandeira": "icons/bandeirabr.svg",
+            "audio": "sounds/bombeiros.mp3",
+            "videopalavra": "videos/palavras/testemax.mp4",
+            "imgpalavra": "img/dicionario/bombeiros.png",
+            "videosignificado": "https://www.youtube.com",
+            "textosignificado": "É uma equipe formada por pessoas devidamente capacitada as para auxiliar no combate a incêndios  antes do corpo de bombeiros chegar. Também têm a função de apoiar em ações de abandono de área em que ocorreu alguma situação de perigo e técnicas de primeiros socorros.",
+            "frases": [
+                {
+                    "id": "1",
+                    "frase": "A empresa onde meu pai trabalha possui brigada de emergência.",
+                    "videofrase": "https://www.youtube.com"
+                },
+                {
+                    "id": "2",
+                    "frase": "A brigada de emergência conseguiu conter o incêndio no prédio.",
+                    "videofrase": "https://www.youtube.com"
+                },
+                {
+                    "id": "3",
+                    "frase": "A brigada de incêndio precisa ser treinada.",
+                    "videofrase": "https://www.youtube.com"
+                }
+            ]
+        },
+        {
+            "id": "10",
+            "palavra": "Porta corta-fogo",
+            "idioma": "pt-BR",
+            "bandeira": "icons/bandeirabr.svg",
+            "audio": "sounds/bombeiros.mp3",
+            "videopalavra": "videos/palavras/testemax.mp4",
+            "imgpalavra": "img/dicionario/bombeiros.png",
+            "videosignificado": "https://www.youtube.com",
+            "textosignificado": "É a porta que impede a propagação do fogo e fumaça durante um intervalo de tempo pré-determinado, Assim a porta corta-fogo deve permanecer sempre fechada para que ela consiga reduzir o tempo de propagação do incêndio nas edificações.",
+            "frases": [
+                {
+                    "id": "1",
+                    "frase": "A porta corta fogo P90 consegue impedir a propagação do incêndio por 90 minutos.",
+                    "videofrase": "https://www.youtube.com"
+                },
+                {
+                    "id": "2",
+                    "frase": "A porta PF60 consegue impedir a propagação do fogo e fumaça resultante de um incêndio por 60 minutos.",
+                    "videofrase": "https://www.youtube.com"
+                },
+                {
+                    "id": "3",
+                    "frase": "A porta corta fogo não pode permanecer trancada.",
+                    "videofrase": "https://www.youtube.com"
+                }
+            ]
+        },
+        {
+            "id": "11",
+            "palavra": "Detector de fumaça",
+            "idioma": "pt-BR",
+            "bandeira": "icons/bandeirabr.svg",
+            "audio": "sounds/bombeiros.mp3",
+            "videopalavra": "videos/palavras/testemax.mp4",
+            "imgpalavra": "img/dicionario/bombeiros.png",
+            "videosignificado": "https://www.youtube.com",
+            "textosignificado": "Aparelhos mede as variações provocadas pela fumaça em sensores elétricos sensíveis à luz e, dessa forma, quando a fumaça atinge o equipamento, ela dissipa a luz que “interliga” os sensores e faz com que o alarme seja disparado.",
+            "frases": [
+                {
+                    "id": "1",
+                    "frase": "Na casa deles não é permitido fumar, pois ela estava equipada com um detector de fumaça que dispara um alarme ao detectar a presença de fumaça.",
+                    "videofrase": "https://www.youtube.com"
+                },
+                {
+                    "id": "2",
+                    "frase": "O alarme detector de fumaça é um importante componente de um sistema de detecção de combate a incêndios.",
+                    "videofrase": "https://www.youtube.com"
+                }       
+            ]
+        },
+        {
+            "id": "12",
+            "palavra": "Sprinkler",
+            "idioma": "pt-BR",
+            "bandeira": "icons/bandeirabr.svg",
+            "audio": "sounds/bombeiros.mp3",
+            "videopalavra": "videos/palavras/testemax.mp4",
+            "imgpalavra": "img/dicionario/bombeiros.png",
+            "videosignificado": "https://www.youtube.com",
+            "textosignificado": "Um dispositivo para a extinção de incêndios composto por é um conjunto de pequenos chuveiros hidráulicos ligados a um sistema de bombeamento de água, que em caso de incêndios são ativados para combater as chamas.",
+            "frases": [
+                {
+                    "id": "1",
+                    "frase": "Se não fossem esses sprinklers que foi acionado e resfriou com água a sala que estava com princípio de incêndio, teria queimado tudo!",
+                    "videofrase": "https://www.youtube.com"
+                }
+                   
             ]
         }
     ]
