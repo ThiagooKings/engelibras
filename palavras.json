@@ -12,7 +12,7 @@
             "textosignificado": "(Hidrante de incêndio) É um terminal hidráulico instalado normalmente nas paredes e corredores de uma edificação para combater grandes incêndios.   Possuem diversos tipos como hidrante público e o hidrante de recalque. Consistem em um conjunto de elementos como abrigo de incêndio, mangueira de incêndio, esguicho, válvula globo e tubulações. Ele é acionado manualmente apenas por pessoas treinadas, pois o grande volume de água que sai pelo hidrante pode fazer com que a pessoa que não esteja preparada se machuque ou não consiga utilizá-lo.",
             "frases": [
                 {   "id": "1",
-                    "frase": "Os bombeiros tiveram que usar um hidrante para controlar o incêndio dentro da edificação",
+                    "frase": "Os bombeiros tiveram que usar um hidrante para controlar o incêndio dentro da edificação.",
                     "videofrase": "https://www.youtube.com"
                 },
                 {

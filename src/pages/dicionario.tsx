@@ -1,12 +1,12 @@
 import Head from "next/head";
-import React, { useState } from "react";
+import React, { useMemo, useState } from "react";
 import { Menu } from '../components/Menu';
 import { Rodape } from "../components/Rodape";
 import styles from '../styles/pages/Dicionario.module.css'
 import PalavrasJSON from '../../palavras.json'
 
 
- type Palavra = {
+type Palavra = {
     id: string;
     palavra: string;
     idioma: string;
@@ -19,7 +19,7 @@ import PalavrasJSON from '../../palavras.json'
     frases: Frase[];
 
 }
- type Frase = {
+type Frase = {
     id: string;
     frase: string;
     videofrase: string;
@@ -30,8 +30,8 @@ type Palavras = {
 }
 
 
- export default function Dicionario() {
-    const db = PalavrasJSON as Palavras ;
+export default function Dicionario() {
+    const db = PalavrasJSON as Palavras;
 
     const [palavraSelecionada, setPalavraSelecionada] = useState(-1);
     const [indexPalavra, setIndexPalavra] = useState(-1);
@@ -39,6 +39,15 @@ type Palavras = {
     const [fraseSelecionada, setFraseSelecionada] = useState(0);
     const [indexFrase, setIndexFrase] = useState(0);
     const [audioClick, setAudioClick] = useState(false);
+    const [buscaPalavra, setBuscaPalavra] = useState('');
+
+
+    const palavrasFiltradas = useMemo(() => {
+        const buscaLower = buscaPalavra.toLowerCase();
+        return db.palavras.filter((palavra) => palavra.palavra.toLowerCase().includes(buscaLower));
+    }, [buscaPalavra]);
+
+
 
     function selecionarPalavra(id: number, index: number) {
         setIndexPalavra(index);
@@ -55,11 +64,16 @@ type Palavras = {
         setTabSelecionado(id);
     }
 
-    function selecionarFrase(id: number, index: number){
+    function selecionarFrase(id: number, index: number) {
         setFraseSelecionada(id);
         setIndexFrase(index);
     }
 
+    function buscarPalavra(value: string) {
+        setBuscaPalavra(value);
+        setIndexPalavra(-1);
+        setPalavraSelecionada(-1);
+    }
 
 
     return (
@@ -95,8 +109,12 @@ type Palavras = {
                         <div className={styles.buscaeIdioma}>
                             <div className={styles.buscaPalavra}>
                                 <form action="" method="post">
-                                    <input className={styles.inputBusca} type="text" placeholder="Pesquisar palavra"></input>
-                                    <button>Pesquisar</button>
+                                    <input className={styles.inputBusca} type="text"
+                                        placeholder="Pesquisar palavra"
+                                        value={buscaPalavra}
+                                        onChange={(ev) => buscarPalavra(ev.target.value)}>
+                                    </input>
+                                    {/*<button>Pesquisar</button>*/}
                                 </form>
                             </div>
                             <div className={styles.selectIdioma}>
@@ -108,20 +126,28 @@ type Palavras = {
                         </div>
                         <div className={styles.listaeConteudo}>
                             <div className={styles.listaPalavras}>
-                                <table>
-                                    <tbody>
-                                        {db.palavras.map((palavra, index) => {
-                                            return (
-                                                <tr key={palavra.id} onClick={() => selecionarPalavra(Number(palavra.id), index)}
-                                                    className={palavraSelecionada === Number(palavra.id) ? styles.active : ''}>
-                                                    <td>
-                                                        {palavra.palavra}
-                                                    </td>
-                                                </tr>
-                                            )
-                                        })}
-                                    </tbody>
-                                </table>
+                                {palavrasFiltradas.length !== 0
+                                    ?
+                                    <table>
+                                        <tbody>
+                                            {palavrasFiltradas.map((palavra, index) => {
+                                                return (
+                                                    <tr key={palavra.id} onClick={() => selecionarPalavra(Number(palavra.id), index)}
+                                                        className={palavraSelecionada === Number(palavra.id) ? styles.active : ''}>
+                                                        <td>
+                                                            {palavra.palavra}
+                                                        </td>
+                                                    </tr>
+                                                )
+                                            })}
+                                        </tbody>
+                                    </table>
+                                    :
+                                    <div className={styles.buscaNaoEncontrada}>
+                                        <span>Nenhuma palavra encontrada!</span>
+                                    </div>
+                                }
+
 
                             </div>
                             <div className={styles.palavraeSignificado}>
@@ -143,23 +169,23 @@ type Palavras = {
                                         : (
                                             <>
                                                 <div className={styles.cabecalhoTabs}>
-                                                    <span>{db.palavras[indexPalavra].palavra}</span>
+                                                    <span>{palavrasFiltradas[indexPalavra].palavra}</span>
                                                     <img src="icons/bandeirabr.svg" />
-                                                    <button><img src="icons/soundicon.svg" onClick={clicarAudio}/></button>
-                                                    
+                                                    <button><img src="icons/soundicon.svg" onClick={clicarAudio} /></button>
+
                                                 </div>
 
                                                 {tabSelecionado === 0 ? (
                                                     <div className={styles.tabsConteudo}>
                                                         <div className={styles.videoPalavra}>
-                                                            <video 
-                                                            autoPlay
-                                                            muted
-                                                            loop
-                                                            src={db.palavras[indexPalavra].videopalavra} />
+                                                            <video
+                                                                autoPlay
+                                                                muted
+                                                                loop
+                                                                src={palavrasFiltradas[indexPalavra].videopalavra} />
                                                         </div>
                                                         <div className={styles.imagemPalavra}>
-                                                            <img src={db.palavras[indexPalavra].imgpalavra} />
+                                                            <img src={palavrasFiltradas[indexPalavra].imgpalavra} />
                                                         </div>
                                                     </div>
                                                 ) : (
@@ -169,7 +195,7 @@ type Palavras = {
                                                                 <img src="img/dicionario/imageexemplo.png" />
                                                             </div>
                                                             <div className={styles.textoSignificado}>
-                                                                <p>{db.palavras[indexPalavra].textosignificado}</p>
+                                                                <p>{palavrasFiltradas[indexPalavra].textosignificado}</p>
                                                             </div>
                                                         </div>
                                                         <div className={styles.frasesSignificados}>
@@ -180,8 +206,8 @@ type Palavras = {
                                                                 <table>
 
                                                                     <tbody>
-        
-                                                                        {db.palavras[indexPalavra].frases.map((frases, index) => {
+
+                                                                        {palavrasFiltradas[indexPalavra].frases.map((frases, index) => {
                                                                             return (
                                                                                 <tr key={frases.id} onClick={() => selecionarFrase(Number(frases.id), index)}
                                                                                     className={fraseSelecionada === Number(frases.id) ? styles.active : ''}>
@@ -211,13 +237,13 @@ type Palavras = {
                         </div>
                     </div>
                 </section>
-                { (audioClick==true) &&
+                {(audioClick == true) &&
                     <audio
-                    src={db.palavras[indexPalavra].audio}
-                    autoPlay
+                        src={db.palavras[indexPalavra].audio}
+                        autoPlay
                     />
-                                                                    
-                     
+
+
                 }
             </main>
             {/* Seção do Rodape */}

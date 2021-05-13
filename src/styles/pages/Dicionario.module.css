@@ -192,5 +192,7 @@ max-width: 100%;
     font-weight: 700;
     color: var(--red);
 }
-
+.buscaNaoEncontrada{
+    text-align: center;
+}
 
