@@ -6,7 +6,7 @@ import { Menu } from '../components/Menu';
 
 export default function Home() {
   return (
-    <div>
+    <>
       <Head>
         <title>Inicio | Engelibras</title>
       </Head>
@@ -277,7 +277,7 @@ export default function Home() {
       <section>
         <Rodape />
       </section>
-    </div>
+    </>
   );
 
 }

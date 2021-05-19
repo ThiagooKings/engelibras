@@ -1,0 +1,79 @@
+.containerFluid {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.sectionBanner {
+    background: linear-gradient(135deg, #81FBB8 0%, #28C76F 100%);
+    height: 70vh;
+}
+
+.conteudoBanner {
+    max-width: 992px;
+    margin: 0 auto;
+    gap: 1rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 60vh;
+}
+
+.textoBanner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.textoBanner span {
+    font-size: 1.25rem;
+    padding-bottom: 1rem;
+}
+
+.imagemBanner {
+    display: flex;
+    align-items: center;
+}
+
+.imagemBanner img {
+    width: 550px;
+    height: auto;
+}
+
+.redText {
+    color: var(--red);
+}
+
+.blueText {
+    color: var(--blue);
+}
+
+.sectionBox {
+    padding-top: 2rem;
+    padding-bottom: 4rem;
+    background: var(--gray6);
+}
+
+.sectionBox h1 {
+    padding-bottom: 2rem;
+}
+
+.containerParceiros{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+    max-width: 992px;
+    margin: 0 auto;
+}
+
+.boxParceiros{
+    background: var(--graycard);
+    border-radius: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0rem;
+}
+
+.fotoParceiro img{
+    width: 100%;
+    height: 100%;
+    border-radius: 16px 0px 0px 16px;
+}

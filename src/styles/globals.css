@@ -8,7 +8,6 @@
     --red: #8D2828;
     --blue: #003D82;
     --lightblue: #E2F0FF;
-    --gray6: #F2F2F2;
     --graycard: #646B72;
     --white: #FFFFFF;
     --gray1: #333333;
@@ -16,6 +15,7 @@
     --gray4: #BDBDBD;
     --gray3: #838383;
     --gray5: #E0E0E0;
+    --gray6: #F2F2F2;
 }
 
 @media(max-width: 1080px) {
