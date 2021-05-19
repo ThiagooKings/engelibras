@@ -41,10 +41,98 @@ export default function Parceiros() {
                                 <img src="img/content/contributors/fperfilquadrada.png" />
                             </div>
                             <div className={styles.conteudoParceiro}>
+                                <div className={styles.nomeParceiro}>
+                                    <span>Thiago Reis</span>
+                                </div>
+                                <div className={styles.midiaSocial}>
+                                    <span>Canal no Youtube</span>
+                                </div>
+                                <div className={styles.descricaoParceiro}>
+                                    <p>
+                                        “Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.”
+                                    </p>
+                                </div>
+                                <div className={styles.iconesSociais}>
+                                    <a href="https://facebook.com" target="_blank"><img src="icons/facebookicon.svg" /></a>
+                                    <a href="https://linkedin.com" target="_blank"><img src="icons/youtubeicon.svg" /></a>
+                                    <a href="https://instagram.com" target="_blank"><img src="icons/instagramicon.svg" /></a>
 
+                                </div>
                             </div>
-
                         </div>
+                        <div className={styles.boxParceiros}>
+                            <div className={styles.fotoParceiro}>
+                                <img src="img/content/contributors/fperfilquadrada.png" />
+                            </div>
+                            <div className={styles.conteudoParceiro}>
+                                <div className={styles.nomeParceiro}>
+                                    <span>Thiago Reis</span>
+                                </div>
+                                <div className={styles.midiaSocial}>
+                                    <span>Canal no Youtube</span>
+                                </div>
+                                <div className={styles.descricaoParceiro}>
+                                    <p>
+                                        “Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.”
+                                    </p>
+                                </div>
+                                <div className={styles.iconesSociais}>
+                                    <a href="https://facebook.com" target="_blank"><img src="icons/facebookicon.svg" /></a>
+                                    <a href="https://linkedin.com" target="_blank"><img src="icons/youtubeicon.svg" /></a>
+                                    <a href="https://instagram.com" target="_blank"><img src="icons/instagramicon.svg" /></a>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div className={styles.boxParceiros}>
+                            <div className={styles.fotoParceiro}>
+                                <img src="img/content/contributors/fperfilquadrada.png" />
+                            </div>
+                            <div className={styles.conteudoParceiro}>
+                                <div className={styles.nomeParceiro}>
+                                    <span>Thiago Reis</span>
+                                </div>
+                                <div className={styles.midiaSocial}>
+                                    <span>Canal no Youtube</span>
+                                </div>
+                                <div className={styles.descricaoParceiro}>
+                                    <p>
+                                        “Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.”
+                                    </p>
+                                </div>
+                                <div className={styles.iconesSociais}>
+                                    <a href="https://facebook.com" target="_blank"><img src="icons/facebookicon.svg" /></a>
+                                    <a href="https://linkedin.com" target="_blank"><img src="icons/youtubeicon.svg" /></a>
+                                    <a href="https://instagram.com" target="_blank"><img src="icons/instagramicon.svg" /></a>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div className={styles.boxParceiros}>
+                            <div className={styles.fotoParceiro}>
+                                <img src="img/content/contributors/fperfilquadrada.png" />
+                            </div>
+                            <div className={styles.conteudoParceiro}>
+                                <div className={styles.nomeParceiro}>
+                                    <span>Thiago Reis</span>
+                                </div>
+                                <div className={styles.midiaSocial}>
+                                    <span>Canal no Youtube</span>
+                                </div>
+                                <div className={styles.descricaoParceiro}>
+                                    <p>
+                                        “Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.”
+                                    </p>
+                                </div>
+                                <div className={styles.iconesSociais}>
+                                    <a href="https://facebook.com" target="_blank"><img src="icons/facebookicon.svg" /></a>
+                                    <a href="https://linkedin.com" target="_blank"><img src="icons/youtubeicon.svg" /></a>
+                                    <a href="https://instagram.com" target="_blank"><img src="icons/instagramicon.svg" /></a>
+
+                                </div>
+                            </div>
+                        </div>
+
 
                     </div>
 

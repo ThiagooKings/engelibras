@@ -77,3 +77,47 @@
     height: 100%;
     border-radius: 16px 0px 0px 16px;
 }
+
+.nomeParceiro{
+    text-align: center;
+}
+
+.nomeParceiro span {
+    font-family: 'Oswald', sans-serif;
+    font-size: 1.375rem;
+    color: var(--white);
+}
+
+.midiaSocial{
+    text-align: center;
+    padding: 0.5rem 0 0.5rem 0;
+}
+
+.midiaSocial span {
+    text-transform: uppercase;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1rem;
+    color: var(--red);
+}
+
+.descricaoParceiro {
+    text-align: justify;
+    padding: 0 1rem;
+}
+
+.descricaoParceiro p {
+    font-weight: 300;
+    color: var(--white);
+    font-style: italic;
+    font-size: 0.875rem;
+    line-height: 1.5rem;
+}
+
+.iconesSociais {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    column-gap: 15px;
+}
