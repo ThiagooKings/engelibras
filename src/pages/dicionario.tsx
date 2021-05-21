@@ -206,7 +206,7 @@ export default function Dicionario() {
                                                                 <table>
 
                                                                     <tbody>
-
+                                                                        {console.log(indexFrase)}
                                                                         {palavrasFiltradas[indexPalavra].frases.map((frases, index) => {
                                                                             return (
                                                                                 <tr key={frases.id} onClick={() => selecionarFrase(Number(frases.id), index)}
@@ -223,7 +223,11 @@ export default function Dicionario() {
                                                             </div>
 
                                                             <div className={styles.videoPalavra}>
-                                                                <img src="img/dicionario/imageexemplo.png" />
+                                                            <video
+                                                                autoPlay
+                                                                muted
+                                                                loop
+                                                                src={palavrasFiltradas[indexPalavra].frases[indexFrase].videofrase} />
                                                             </div>
                                                         </div>
                                                     </>

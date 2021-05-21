@@ -9,7 +9,7 @@
             "videopalavra": "videos/palavras/teste.mp4",
             "imgpalavra": "img/dicionario/fogo.svg",
             "videosignificado": "https://www.youtube.com",
-            "textosignificado": "(Hidrante de incêndio) É um terminal hidráulico instalado normalmente nas paredes e corredores de uma edificação para combater grandes incêndios.   Possuem diversos tipos como hidrante público e o hidrante de recalque. Consistem em um conjunto de elementos como abrigo de incêndio, mangueira de incêndio, esguicho, válvula globo e tubulações. Ele é acionado manualmente apenas por pessoas treinadas, pois o grande volume de água que sai pelo hidrante pode fazer com que a pessoa que não esteja preparada se machuque ou não consiga utilizá-lo.",
+            "textosignificado": "(Hidrante de incêndio) É um terminal hidráulico instalado normalmente nas paredes e corredores de uma edificação para combater grandes incêndios. Possuem diversos tipos como hidrante público e o hidrante de recalque. Consistem em um conjunto de elementos como abrigo de incêndio, mangueira de incêndio, esguicho, válvula globo e tubulações.",
             "frases": [
                 {   "id": "1",
                     "frase": "Os bombeiros tiveram que usar um hidrante para controlar o incêndio dentro da edificação.",
@@ -93,7 +93,7 @@
             "idioma": "pt-BR",
             "bandeira": "icons/bandeirabr.svg",
             "audio": "sounds/bombeiros.mp3",
-            "videopalavra": "videos/palavras/testemax.mp4",
+            "videopalavra": "videos/palavras/palavraextintor.mp4",
             "imgpalavra": "img/dicionario/bombeiros.png",
             "videosignificado": "https://www.youtube.com",
             "textosignificado": "Extintor de Incêndio é um equipamento de segurança de acionamento manual que possui a finalidade de extinguir ou controlar princípios de incêndios em casos de emergência. Em geral, possui formato cilíndrico  e pode ser carregado até o local do foco do incêndio, contendo um agente extintor sob pressão.",
@@ -101,17 +101,17 @@
                 {
                     "id": "1",
                     "frase": "O extintor está carregado?",
-                    "videofrase": "https://www.youtube.com"
+                    "videofrase": "videos/frases/extintor/fraseA.mp4"
                 },
                 {
                     "id": "2",
                     "frase": "O extintor é de qual classe?",
-                    "videofrase": "https://www.youtube.com"
+                    "videofrase": "videos/frases/extintor/fraseB.mp4"
                 },
                 {
                     "id": "3",
                     "frase": "Como devo utilizar o extintor?",
-                    "videofrase": "https://www.youtube.com"
+                    "videofrase": "videos/frases/extintor/fraseC.mp4"
                 }
             ]
         },
