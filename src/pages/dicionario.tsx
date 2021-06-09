@@ -53,6 +53,7 @@ export default function Dicionario() {
         setIndexPalavra(index);
         setPalavraSelecionada(id);
         setFraseSelecionada(1);
+        setIndexFrase(0);
         setAudioClick(false);
     }
 
@@ -191,9 +192,13 @@ export default function Dicionario() {
                                                 ) : (
                                                     <>
                                                         <div className={styles.tabsConteudo}>
-                                                            <div className={styles.videoPalavra}>
-                                                                <img src="img/dicionario/imageexemplo.png" />
-                                                            </div>
+                                                        <div className={styles.videoPalavra}>
+                                                            <video
+                                                                autoPlay
+                                                                muted
+                                                                loop
+                                                                src={palavrasFiltradas[indexPalavra].videosignificado} />
+                                                        </div>
                                                             <div className={styles.textoSignificado}>
                                                                 <p>{palavrasFiltradas[indexPalavra].textosignificado}</p>
                                                             </div>

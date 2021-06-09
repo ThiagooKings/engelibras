@@ -44,6 +44,10 @@ textarea {
     font-family: 'Roboto', sans-serif;
 }
 
+html > div[style] { /* desabilitar player automático nos videos do opera */
+    display: none !important;
+  }
+
 h1 {
     font-family: 'Bebas Neue', cursive;
     font-size: 3.5rem;

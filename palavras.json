@@ -8,22 +8,22 @@
             "audio": "sounds/fogo.wav",
             "videopalavra": "videos/palavras/teste.mp4",
             "imgpalavra": "img/dicionario/fogo.svg",
-            "videosignificado": "https://www.youtube.com",
+            "videosignificado": "videos/significado/hidrantesignificado.mp4",
             "textosignificado": "(Hidrante de incêndio) É um terminal hidráulico instalado normalmente nas paredes e corredores de uma edificação para combater grandes incêndios. Possuem diversos tipos como hidrante público e o hidrante de recalque. Consistem em um conjunto de elementos como abrigo de incêndio, mangueira de incêndio, esguicho, válvula globo e tubulações.",
             "frases": [
                 {   "id": "1",
                     "frase": "Os bombeiros tiveram que usar um hidrante para controlar o incêndio dentro da edificação.",
-                    "videofrase": "https://www.youtube.com"
+                    "videofrase": "videos/frases/hidrante/fraseA.mp4"
                 },
                 {
                     "id": "2",
                     "frase": "Os hidrantes de um prédio usam tubulações hidráulicas próprias na edificação.",
-                    "videofrase": "https://www.youtube.com"
+                    "videofrase": "videos/frases/hidrante/fraseB.mp4"
                 },
                 {   
                     "id": "3",
                     "frase": "Onde estão instalados os hidrantes deste prédio?",
-                    "videofrase": "https://www.youtube.com"
+                    "videofrase": "videos/frases/hidrante/fraseC.mp4"
                 }
             ]
             
@@ -37,23 +37,23 @@
             "audio": "sounds/comburente.mp3",
             "videopalavra": "videos/palavras/dicionarioengelibras.mp4",
             "imgpalavra": "img/dicionario/comburente.png",
-            "videosignificado": "https://www.youtube.com",
+            "videosignificado": "videos/significado/perigosignificado.mp4",
             "textosignificado": "Situação, acontecimento ou evento em que pode ocorrer algo prejudicial, indesejável.  Situação perigosa, acontecimento perigoso, evento perigoso.",
             "frases": [
                 {   
                     "id": "1",
                     "frase": "Você estará em perigo se o seu colchão pegar fogo!",
-                    "videofrase": "https://www.youtube.com"
+                    "videofrase": "videos/frases/perigo/fraseA.mp4"
                 },
                 {
                     "id": "2",
                     "frase": "É muito perigoso se uma vela acessa cair próximo a uma cortina ou em cima de um sofá.",
-                    "videofrase": "https://www.youtube.com"
+                    "videofrase": "videos/frases/perigo/fraseB.mp4"
                 },
                 {
                     "id": "3",
                     "frase": "Inalar a fumaça de um incêndio é perigoso, pode causar sérios problemas à saúde.",
-                    "videofrase": "https://www.youtube.com"
+                    "videofrase": "videos/frases/perigo/fraseC.mp4"
                 }
                
             ]
@@ -66,7 +66,7 @@
             "audio": "sounds/fogo.wav",
             "videopalavra": "videos/palavras/inicialengelibras.mp4",
             "imgpalavra": "img/dicionario/extintor.png",
-            "videosignificado": "https://www.youtube.com",
+            "videosignificado": "videos/significado/combustivelsignificado.mp4",
             "textosignificado": "Materiais ou substâncias sólidas, líquidas ou gasosas que tem a propriedade de se queimar  e liberar calor, chamas e gases quando combinados com oxigênio ou outras substâncias oxidantes",
             "frases": [
                 {
