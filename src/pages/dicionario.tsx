@@ -44,9 +44,9 @@ export default function Dicionario() {
 
     const palavrasFiltradas = useMemo(() => {
         const buscaLower = buscaPalavra.toLowerCase();
-        return db.palavras.filter((palavra) => palavra.palavra.toLowerCase().includes(buscaLower));
+        const ordemAlfabetica = db.palavras.sort((a,b) => a.palavra > b.palavra && 1 || -1);
+        return ordemAlfabetica.filter((palavra) => palavra.palavra.toLowerCase().includes(buscaLower));
     }, [buscaPalavra]);
-
 
 
     function selecionarPalavra(id: number, index: number) {
@@ -131,6 +131,7 @@ export default function Dicionario() {
                                     ?
                                     <table>
                                         <tbody>
+                                            
                                             {palavrasFiltradas.map((palavra, index) => {
                                                 return (
                                                     <tr key={palavra.id} onClick={() => selecionarPalavra(Number(palavra.id), index)}
@@ -211,7 +212,7 @@ export default function Dicionario() {
                                                                 <table>
 
                                                                     <tbody>
-                                                                        {console.log(indexFrase)}
+                                                                        
                                                                         {palavrasFiltradas[indexPalavra].frases.map((frases, index) => {
                                                                             return (
                                                                                 <tr key={frases.id} onClick={() => selecionarFrase(Number(frases.id), index)}
