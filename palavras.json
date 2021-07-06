@@ -7,7 +7,7 @@
             "bandeira": "icons/bandeirabr.svg",
             "audio": "sounds/fogo.wav",
             "videopalavra": "videos/palavras/palavrahidrante.mp4",
-            "imgpalavra": "img/dicionario/fogo.svg",
+            "imgpalavra": "img/dicionario/hidrante.png",
             "videosignificado": "videos/significado/hidrantesignificado.mp4",
             "textosignificado": "(Hidrante de incêndio) É um terminal hidráulico instalado normalmente nas paredes e corredores de uma edificação para combater grandes incêndios. Possuem diversos tipos como hidrante público e o hidrante de recalque. Consistem em um conjunto de elementos como abrigo de incêndio, mangueira de incêndio, esguicho, válvula globo e tubulações.",
             "frases": [
@@ -36,7 +36,7 @@
             "bandeira": "icons/bandeirabr.svg",
             "audio": "sounds/comburente.mp3",
             "videopalavra": "videos/palavras/palavraperigo.mp4",
-            "imgpalavra": "img/dicionario/comburente.png",
+            "imgpalavra": "img/dicionario/perigo.png",
             "videosignificado": "videos/significado/perigosignificado.mp4",
             "textosignificado": "Situação, acontecimento ou evento em que pode ocorrer algo prejudicial, indesejável.  Situação perigosa, acontecimento perigoso, evento perigoso.",
             "frases": [
@@ -65,7 +65,7 @@
             "bandeira": "icons/bandeirabr.svg",
             "audio": "sounds/fogo.wav",
             "videopalavra": "videos/palavras/palavracombustivel.mp4",
-            "imgpalavra": "img/dicionario/extintor.png",
+            "imgpalavra": "img/dicionario/combustivel.png",
             "videosignificado": "videos/significado/combustivelsignificado.mp4",
             "textosignificado": "Materiais ou substâncias sólidas, líquidas ou gasosas que tem a propriedade de se queimar  e liberar calor, chamas e gases quando combinados com oxigênio ou outras substâncias oxidantes",
             "frases": [
@@ -94,7 +94,7 @@
             "bandeira": "icons/bandeirabr.svg",
             "audio": "sounds/bombeiros.mp3",
             "videopalavra": "videos/palavras/palavraextintor.mp4",
-            "imgpalavra": "img/dicionario/bombeiros.png",
+            "imgpalavra": "img/dicionario/extintor.jpg",
             "videosignificado": "https://www.youtube.com",
             "textosignificado": "Extintor de Incêndio é um equipamento de segurança de acionamento manual que possui a finalidade de extinguir ou controlar princípios de incêndios em casos de emergência. Em geral, possui formato cilíndrico  e pode ser carregado até o local do foco do incêndio, contendo um agente extintor sob pressão.",
             "frases": [
@@ -122,7 +122,7 @@
             "bandeira": "icons/bandeirabr.svg",
             "audio": "sounds/bombeiros.mp3",
             "videopalavra": "videos/palavras/testemax.mp4",
-            "imgpalavra": "img/dicionario/bombeiros.png",
+            "imgpalavra": "img/dicionario/mangueiradeincendio.png",
             "videosignificado": "https://www.youtube.com",
             "textosignificado": "Equipamento de combate à incêndio, constituído essencialmente por um duto flexível dotado de uniões conectadas Compõe o hidrante  para combate ao incêndio mas também é usada em caminhões  auto bomba tanque do corpo de bombeiros.",
             "frases": [
@@ -150,7 +150,7 @@
             "bandeira": "icons/bandeirabr.svg",
             "audio": "sounds/bombeiros.mp3",
             "videopalavra": "videos/palavras/testemax.mp4",
-            "imgpalavra": "img/dicionario/bombeiros.png",
+            "imgpalavra": "img/dicionario/incendio.png",
             "videosignificado": "https://www.youtube.com",
             "textosignificado": "Incêndio é uma ocorrência de fogo não controlado e intenso, que pode ser extremamente perigosa para os seres vivos, meio ambiente e para o patrimônio     . A exposição a um incêndio pode produzir a morte, geralmente pela inalação dos gases, ou pelo desmaio causado por eles, ou posteriormente pelas queimaduras graves.",
             "frases": [
@@ -178,7 +178,7 @@
             "bandeira": "icons/bandeirabr.svg",
             "audio": "sounds/bombeiros.mp3",
             "videopalavra": "videos/palavras/testemax.mp4",
-            "imgpalavra": "img/dicionario/bombeiros.png",
+            "imgpalavra": "img/dicionario/rotadefuga.png",
             "videosignificado": "https://www.youtube.com",
             "textosignificado": "Rota de fuga é o trajeto no qual as pessoas devem seguir em casos de incêndio, em situações que exijam a evacuação de um local",
             "frases": [
@@ -206,8 +206,8 @@
             "bandeira": "icons/bandeirabr.svg",
             "audio": "sounds/bombeiros.mp3",
             "videopalavra": "videos/palavras/testemax.mp4",
-            "imgpalavra": "img/dicionario/bombeiros.png",
-            "videosignificado": "https://www.youtube.com",
+            "imgpalavra": "img/dicionario/pontodeencontro.png",
+            "videosignificado": "videos/significado/pontodeencontro.mp4",
             "textosignificado": "Local para onde  as pessoas devem ser direcionadas pelas sinalizações de emergência ou pelos brigadistas em situações de emergência.",
             "frases": [
                 {
@@ -234,7 +234,7 @@
             "bandeira": "icons/bandeirabr.svg",
             "audio": "sounds/bombeiros.mp3",
             "videopalavra": "videos/palavras/testemax.mp4",
-            "imgpalavra": "img/dicionario/bombeiros.png",
+            "imgpalavra": "img/dicionario/brigadadeincendio.png",
             "videosignificado": "https://www.youtube.com",
             "textosignificado": "É uma equipe formada por pessoas devidamente capacitada as para auxiliar no combate a incêndios  antes do corpo de bombeiros chegar. Também têm a função de apoiar em ações de abandono de área em que ocorreu alguma situação de perigo e técnicas de primeiros socorros.",
             "frases": [
@@ -262,7 +262,7 @@
             "bandeira": "icons/bandeirabr.svg",
             "audio": "sounds/bombeiros.mp3",
             "videopalavra": "videos/palavras/testemax.mp4",
-            "imgpalavra": "img/dicionario/bombeiros.png",
+            "imgpalavra": "img/dicionario/portacortafogo.png",
             "videosignificado": "https://www.youtube.com",
             "textosignificado": "É a porta que impede a propagação do fogo e fumaça durante um intervalo de tempo pré-determinado, Assim a porta corta-fogo deve permanecer sempre fechada para que ela consiga reduzir o tempo de propagação do incêndio nas edificações.",
             "frases": [
@@ -290,7 +290,7 @@
             "bandeira": "icons/bandeirabr.svg",
             "audio": "sounds/bombeiros.mp3",
             "videopalavra": "videos/palavras/testemax.mp4",
-            "imgpalavra": "img/dicionario/bombeiros.png",
+            "imgpalavra": "img/dicionario/detectordefumaca.png",
             "videosignificado": "https://www.youtube.com",
             "textosignificado": "Aparelhos mede as variações provocadas pela fumaça em sensores elétricos sensíveis à luz e, dessa forma, quando a fumaça atinge o equipamento, ela dissipa a luz que “interliga” os sensores e faz com que o alarme seja disparado.",
             "frases": [
@@ -313,7 +313,7 @@
             "bandeira": "icons/bandeirabr.svg",
             "audio": "sounds/bombeiros.mp3",
             "videopalavra": "videos/palavras/testemax.mp4",
-            "imgpalavra": "img/dicionario/bombeiros.png",
+            "imgpalavra": "img/dicionario/sprinkler.png",
             "videosignificado": "https://www.youtube.com",
             "textosignificado": "Um dispositivo para a extinção de incêndios composto por é um conjunto de pequenos chuveiros hidráulicos ligados a um sistema de bombeamento de água, que em caso de incêndios são ativados para combater as chamas.",
             "frases": [

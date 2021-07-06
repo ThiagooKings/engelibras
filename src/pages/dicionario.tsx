@@ -252,8 +252,6 @@ export default function Dicionario() {
                         src={db.palavras[indexPalavra].audio}
                         autoPlay
                     />
-
-
                 }
             </main>
             {/* Seção do Rodape */}
