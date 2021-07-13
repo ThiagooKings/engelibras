@@ -1,6 +1,6 @@
 import Head from "next/head";
 import React, { useMemo, useState } from "react";
-import { Menu } from '../components/Menu';
+import { MenuLogo } from '../components/MenuLogo';
 import { Rodape } from "../components/Rodape";
 import styles from '../styles/pages/Dicionario.module.css'
 import PalavrasJSON from '../../palavras.json'
@@ -85,7 +85,7 @@ export default function Dicionario() {
             <main>
                 {/* Seção do Banner */}
                 <section className={`${styles.containerFluid} ${styles.sectionBanner}`}>
-                    <Menu />
+                    <MenuLogo />
                     <div className={styles.conteudoBanner}>
                         <div className={styles.textoBanner}>
                             <h2> Explore nosso dicionário </h2>

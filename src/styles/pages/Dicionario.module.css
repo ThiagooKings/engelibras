@@ -183,13 +183,13 @@ max-width: 100%;
     text-align: center;
 }
 
-@media screen and (min-width: 801px){
+@media screen and (min-width: 801px){ /* para telas maiores */
     .imagemBanner {
         display: flex;
         align-items: center;
     }
     
-    .imagemBanner img { /* para telas maiores */
+    .imagemBanner img { 
         width: 550px;
         height: auto;
     }
@@ -208,7 +208,14 @@ max-width: 100%;
 }
 
 @media screen and (max-width: 800px) { /* para telas menores */
-   .imagemBanner{
+    .container {
+     padding-left: 30px;
+     padding-right: 30px;
+     gap: 0;
+    
+    }
+   
+    .imagemBanner{
        display: none;
    }
 
@@ -227,6 +234,7 @@ max-width: 100%;
     .buscaeIdioma {
         display: flex;
         justify-content: center;
+        padding-bottom: 3rem;
 
     }
 
@@ -240,6 +248,24 @@ max-width: 100%;
     .inputBusca {
         width: 100%;
     }
+
+    .listaeConteudo {
+        display: block;
+        flex-wrap: wrap;
+        flex: 1;
+    }
+
+    .tabs{
+        padding-top: 3rem;
+    }
+
+    .sectionBanner{
+        height: 60vh;
+    }
+    .conteudoBanner{
+        height: 50vh;
+    }
+
     
     
 }
