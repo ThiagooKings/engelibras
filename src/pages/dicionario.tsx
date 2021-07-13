@@ -209,7 +209,7 @@ export default function Dicionario() {
                                                         </div>
                                                         <div className={styles.tabsConteudo}>
                                                             <div className={styles.listaPalavras}>
-                                                                <table>
+                                                                <table className={styles.tabelaFrase}>
 
                                                                     <tbody>
                                                                         

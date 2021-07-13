@@ -266,6 +266,17 @@ max-width: 100%;
         height: 50vh;
     }
 
+    .tabsConteudo{
+        display: block;
+    }
+    .videoPalavra{
+        padding-bottom: 2rem;
+    }
+
+    .tabelaFrase{
+        margin-bottom: 2rem;
+    }
+
     
     
 }
