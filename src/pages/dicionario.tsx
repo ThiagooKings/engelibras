@@ -193,13 +193,22 @@ export default function Dicionario() {
                                                 ) : (
                                                     <>
                                                         <div className={styles.tabsConteudo}>
+
+                                                    {palavrasFiltradas[indexPalavra].videosignificado === "" ?(
+                                                         <div className={styles.semVideo}>
+                                                         <span>Video não disponível no momento!</span>
+                                                         <img src="icons/novideoicon.svg"/>
+                                                     </div>
+                                                    ) : (
                                                         <div className={styles.videoPalavra}>
                                                             <video
-                                                                autoPlay
+                                                                controls
                                                                 muted
                                                                 loop
                                                                 src={palavrasFiltradas[indexPalavra].videosignificado} />
                                                         </div>
+                                                    )}
+                                                        
                                                             <div className={styles.textoSignificado}>
                                                                 <p>{palavrasFiltradas[indexPalavra].textosignificado}</p>
                                                             </div>
@@ -227,14 +236,21 @@ export default function Dicionario() {
                                                                 </table>
 
                                                             </div>
-
-                                                            <div className={styles.videoPalavra}>
-                                                            <video
-                                                                autoPlay
-                                                                muted
-                                                                loop
-                                                                src={palavrasFiltradas[indexPalavra].frases[indexFrase].videofrase} />
-                                                            </div>
+                                                            {palavrasFiltradas[indexPalavra].frases[indexFrase].videofrase === "" ?(
+                                                                <div className={styles.semVideo}>
+                                                                    <span>Video não disponível no momento!</span>
+                                                                    <img src="icons/novideoicon.svg"/>
+                                                                </div>
+                                                            ) : (
+                                                                <div className={styles.videoPalavra}>
+                                                                <video
+                                                                    controls
+                                                                    muted
+                                                                    loop
+                                                                    src={palavrasFiltradas[indexPalavra].frases[indexFrase].videofrase} />
+                                                                </div>
+                                                            )}
+                                                           
                                                         </div>
                                                     </>
                                                 )}

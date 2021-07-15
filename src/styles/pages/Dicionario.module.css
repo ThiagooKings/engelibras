@@ -154,9 +154,21 @@ tr.active{
     padding-top: 1rem;
 }
 
-.videoPalavra, .imagemPalavra{
+ .imagemPalavra{
     display: flex;
     justify-content: center;
+}
+
+.semVideo{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.semVideo img{
+    padding-top: 1rem;
 }
 
 .videoPalavra img, .imagemPalavra img{
@@ -269,14 +281,19 @@ max-width: 100%;
     .tabsConteudo{
         display: block;
     }
-    .videoPalavra{
-        padding-bottom: 2rem;
+    .imagemPalavra{
+        padding-top: 2rem;
     }
 
     .tabelaFrase{
         margin-bottom: 2rem;
     }
-
+    .semVideo{
+        padding-top: 2rem;
+    }
+    .textoSignificado{
+        padding-top: 1rem;
+    }
     
     
 }
