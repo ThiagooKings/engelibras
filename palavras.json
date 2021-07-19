@@ -72,17 +72,17 @@
                 {
                     "id": "1",
                     "frase": "A madeira é um material combustível sólido, pois ao aumentar a sua temperatura no ar ela se queima, produz chama, fumaça e gases.",
-                    "videofrase": ""
+                    "videofrase": "videos/frases/combustivel/fraseA.mp4"
                 },
                 {
                     "id": "2",
                     "frase": "Quanto maior a quantidade de material ou substâncias combustíveis existir dentro de um ambiente maior risco de ocorrer um incêndio de grandes proporções.",
-                    "videofrase": ""
+                    "videofrase": "videos/frases/combustivel/fraseB.mp4"
                 },
                 {
                     "id": "3",
                     "frase": "O gás de cozinha é uma substância combustível e por isso produz a chama que usamos na cozinha.",
-                    "videofrase": ""
+                    "videofrase": "videos/frases/combustivel/fraseC.mp4"
                 }
                
             ]
@@ -95,7 +95,7 @@
             "audio": "sounds/bombeiros.mp3",
             "videopalavra": "videos/palavras/palavraextintor.mp4",
             "imgpalavra": "img/dicionario/extintor.jpg",
-            "videosignificado": "",
+            "videosignificado": "videos/significado/extintorsignificado.mp4",
             "textosignificado": "Extintor de Incêndio é um equipamento de segurança de acionamento manual que possui a finalidade de extinguir ou controlar princípios de incêndios em casos de emergência. Em geral, possui formato cilíndrico  e pode ser carregado até o local do foco do incêndio, contendo um agente extintor sob pressão.",
             "frases": [
                 {
@@ -213,17 +213,17 @@
                 {
                     "id": "1",
                     "frase": "Todos devem permanecer no ponto de encontro até os bombeiros chegarem.",
-                    "videofrase": ""
+                    "videofrase": "videos/frases/pontodeencontro/fraseA.mp4"
                 },
                 {
                     "id": "2",
                     "frase": "O ponto de encontro está bem distante do local onde o incêndio aconteceu.",
-                    "videofrase": ""
+                    "videofrase": "videos/frases/pontodeencontro/fraseB.mp4"
                 },
                 {
                     "id": "3",
                     "frase": "O ponto de encontro é um local seguro.",
-                    "videofrase": ""
+                    "videofrase": "videos/frases/pontodeencontro/fraseC.mp4"
                 }
             ]
         },

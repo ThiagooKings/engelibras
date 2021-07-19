@@ -120,7 +120,7 @@ export default function Dicionario() {
                             </div>
                             <div className={styles.selectIdioma}>
                                 <li>
-                                    <span> Portugês brasileiro </span>
+                                    <span> Português brasileiro </span>
                                     <img src="icons/bandeirabr.svg" />
                                 </li>
                             </div>
